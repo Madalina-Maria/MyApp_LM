@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import NavPrincipal from '../../components/navbar/NavPrincipal'
-import './Style.css'
+import './StyleL.css'
 
 const Login = () => {
   return (

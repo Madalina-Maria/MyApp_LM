@@ -109,7 +109,7 @@ const CLoginPF = () => {
               Dacă nu ai cont, acum este momentul să îți faci:
             </p>
             <Button
-              href='http://localhost:3000/register/persoana'
+              href='http://localhost:3000/registerPF'
               target={'_self'}
               variant='outlined'
               color='warning'
