@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.boxLoginPJ {
+  background: rgb(209, 206, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(209, 206, 252, 1) 0%,
+    rgba(254, 254, 254, 1) 50%,
+    rgba(187, 237, 247, 1) 100%
+  );
+}

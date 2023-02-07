@@ -5,7 +5,7 @@ import './StylePJ.css'
 
 const LoginPJ = () => {
   return (
-    <div className='pb-20'>
+    <div className='boxLoginPJ'>
       <NavPrincipal />
       <CLoginPJ />
     </div>

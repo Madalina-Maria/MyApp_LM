@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.boxRegisterPJ {
+  background: rgb(172, 188, 203);
+  background: linear-gradient(
+    90deg,
+    rgba(172, 188, 203, 1) 0%,
+    rgba(235, 215, 215, 1) 50%,
+    rgba(172, 188, 203, 1) 100%
+  );
+}

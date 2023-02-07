@@ -16,8 +16,8 @@ import Link from '@mui/material/Link'
 const CLoginPF = () => {
   return (
     <div className='min-w-full min-w-fit'>
-      <div className='flex justify-center my-20 '>
-        <Box className='shadow-2xl shadow-blue-900/100 hover:shadow-violet-900/100 bg-gray-50 hover:bg-white p-10 rounded-xl'>
+      <div className='flex justify-center my-20'>
+        <Box className='shadow-2xl shadow-blue-900/100 hover:shadow-violet-900/100 bg-gray-50 hover:bg-white p-10 rounded-xl mb-12'>
           <p className='text-center font-serif text-3xl'>CONECTARE</p>
           <p className='text-xl font-serif my-10'>
             Ne bucurăm să te avem alături! Te rugăm să iți introduci datele
@@ -88,6 +88,7 @@ const CLoginPF = () => {
               ______ sau ______
             </p>
             <Button
+              href='https://accounts.google.com/v3/signin/identifier?dsh=S-1442622727%3A1675709476040033&authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Dro%26sa%3DX%26ved%3D0ahUKEwjioNT7rMP3AhWZ7aQKHbeoDuMQPAgI&ec=GAlAmgQ&hl=ro&flowName=GlifWebSignIn&flowEntry=AddSession'
               variant='outlined'
               startIcon={<GoogleIcon />}
               color={'error'}
@@ -99,6 +100,7 @@ const CLoginPF = () => {
             <br />
 
             <Button
+              href='https://www.facebook.com/'
               variant='outlined'
               startIcon={<FacebookIcon />}
               size='large'

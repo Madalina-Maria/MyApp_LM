@@ -6,7 +6,7 @@ import './StylePF.css'
 const LoginPF = () => {
   return (
     <div className='boxLoginPF'>
-      <div className='pb-20'>
+      <div>
         <NavPrincipal />
         <CLoginPF />
       </div>

@@ -7,6 +7,7 @@ import LoginPJ from './pages/login/LoginPJ'
 import Register from './pages/register/Register'
 import RegisterPF from './pages/register/RegisterPF'
 import RegisterPJ from './pages/register/RegisterPJ'
+import Ajutor from './pages/ajutor/Ajutor'
 function App() {
   return (
     <Routes>
@@ -17,6 +18,7 @@ function App() {
       <Route path='/register' element={<Register />}></Route>
       <Route path='/registerPf' element={<RegisterPF />}></Route>
       <Route path='/registerPj' element={<RegisterPJ />}></Route>
+      <Route path='/ajutor' element={<Ajutor />}></Route>
     </Routes>
   )
 }

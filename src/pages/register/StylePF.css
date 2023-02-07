@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.boxRegisterPF {
+  background: rgb(250, 222, 222);
+  background: radial-gradient(
+    circle,
+    rgba(250, 222, 222, 1) 0%,
+    rgba(186, 205, 252, 1) 100%
+  );
+}

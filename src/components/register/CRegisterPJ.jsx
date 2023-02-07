@@ -8,18 +8,14 @@ import LockIcon from '@mui/icons-material/Lock'
 import GoogleIcon from '@mui/icons-material/Google'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import ShieldIcon from '@mui/icons-material/Shield'
-import PersonIcon from '@mui/icons-material/Person'
-import CakeIcon from '@mui/icons-material/Cake'
 import PlaceIcon from '@mui/icons-material/Place'
 import SignpostIcon from '@mui/icons-material/Signpost'
 import HomeIcon from '@mui/icons-material/Home'
 import LocationCityIcon from '@mui/icons-material/LocationCity'
 import PhoneIcon from '@mui/icons-material/Phone'
 import PublicIcon from '@mui/icons-material/Public'
-import { Typography } from '@mui/material'
 import BusinessIcon from '@mui/icons-material/Business'
 import DomainVerificationIcon from '@mui/icons-material/DomainVerification'
-import { Stack } from '@mui/system'
 
 const CRegisterPJ = () => {
   return (
@@ -36,31 +32,17 @@ const CRegisterPJ = () => {
             <form className='flex flex-col justify-items-center  my-2'>
               <div className='grid gap-4 grid-cols-2'>
                 <TextField
+                  maxWidth={10}
                   fontFamily='sans-serif'
                   margin='normal'
                   type={'text'}
                   variant='outlined'
-                  placeholder=' Denumire Firmă'
-                  autoComplete='Denumire Firmă'
+                  placeholder='Denumire Firmă'
+                  autoComplete='denumire firmă'
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position='start'>
-                        <PersonIcon />
-                      </InputAdornment>
-                    ),
-                  }}
-                ></TextField>
-                <TextField
-                  fontFamily='sans-serif'
-                  margin='normal'
-                  type={'text'}
-                  variant='outlined'
-                  placeholder='Prenume'
-                  autoComplete='Prenume'
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position='start'>
-                        <PersonIcon />
+                        <BusinessIcon />
                       </InputAdornment>
                     ),
                   }}
@@ -69,14 +51,14 @@ const CRegisterPJ = () => {
                   maxWidth={50}
                   fontFamily='sans-serif'
                   margin='normal'
-                  type={'date'}
+                  type={'text'}
                   variant='outlined'
-                  placeholder='Data nașterii'
-                  autoComplete='data nasterii'
+                  placeholder='Domeniul de Activitate'
+                  autoComplete='domeniul de activitate'
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position='start'>
-                        <CakeIcon />
+                        <DomainVerificationIcon />
                       </InputAdornment>
                     ),
                   }}
@@ -168,8 +150,8 @@ const CRegisterPJ = () => {
                   margin='normal'
                   type={'text'}
                   variant='outlined'
-                  placeholder='CNP'
-                  autoComplete='cnp'
+                  placeholder='C.U.I.'
+                  autoComplete='CUI'
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position='start'>
@@ -288,7 +270,7 @@ const CRegisterPJ = () => {
                 Dacă ai cont, doar conectează-te:
               </p>
               <Button
-                href='http://localhost:3000/loginPF'
+                href='http://localhost:3000/loginPJ'
                 target={'_self'}
                 variant='outlined'
                 color='warning'
