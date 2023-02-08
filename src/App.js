@@ -10,6 +10,12 @@ import Register from './pages/register/Register'
 import RegisterPF from './pages/register/RegisterPF'
 import RegisterPJ from './pages/register/RegisterPJ'
 import Ajutor from './pages/ajutor/Ajutor'
+import Terenuri from './pages/persoanaFizica/Terenuri'
+import Licitatii from './pages/persoanaFizica/Licitatii'
+import Oferte from './pages/persoanaFizica/Oferte'
+import Cereri from './pages/persoanaFizica/Cereri'
+import Achizitii from './pages/persoanaFizica/Achizitii'
+import AjutorPF from './pages/persoanaFizica/AjutorPF'
 function App() {
   return (
     <Routes>
@@ -22,6 +28,12 @@ function App() {
       <Route path='/register' element={<Register />}></Route>
       <Route path='/registerPf' element={<RegisterPF />}></Route>
       <Route path='/registerPj' element={<RegisterPJ />}></Route>
+      <Route path='/terenuriPf' element={<Terenuri />}></Route>
+      <Route path='/licitatiiPf' element={<Licitatii />}></Route>
+      <Route path='/ofertePf' element={<Oferte />}></Route>
+      <Route path='/cereriPf' element={<Cereri />}></Route>
+      <Route path='/achizitiiPf' element={<Achizitii />}></Route>
+      <Route path='/ajutorPf' element={<AjutorPF />}></Route>
       <Route path='/ajutor' element={<Ajutor />}></Route>
     </Routes>
   )

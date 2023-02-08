@@ -63,7 +63,7 @@ const NavPF = () => {
 
             <BottomNavigationAction
               component={Link}
-              to='/homePf'
+              to='/terenuriPf'
               label='TERENURILE MELE'
               value='text'
               icon={<TerrainIcon />}
@@ -71,7 +71,7 @@ const NavPF = () => {
 
             <BottomNavigationAction
               component={Link}
-              to='/homePf'
+              to='/licitatiiPf'
               label='LICITAȚii'
               value='text'
               icon={<LocalOfferIcon />}
@@ -79,35 +79,35 @@ const NavPF = () => {
 
             <BottomNavigationAction
               component={Link}
-              to='/homePf'
+              to='/ofertePf'
               label='OFERTE'
               value='text'
               icon={<PercentIcon />}
             />
             <BottomNavigationAction
               component={Link}
-              to='/homePf'
+              to='/cereriPf'
               label='CERERI'
               value='text'
               icon={<RequestPageIcon />}
             />
             <BottomNavigationAction
               component={Link}
-              to='/homePf'
+              to='/achizitiiPf'
               label='ACHIZIȚII'
               value='text'
               icon={<ShoppingCartIcon />}
             />
             <BottomNavigationAction
               component={Link}
-              to='/homePf'
+              to='/ajutorPf'
               label='AJUTOR'
               value='text'
               icon={<HelpIcon />}
             />
             <BottomNavigationAction
               component={Link}
-              to='/homePf'
+              to='/'
               label='DECONECTARE'
               value='text'
               icon={<LogoutIcon />}
