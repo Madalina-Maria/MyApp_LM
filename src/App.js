@@ -1,6 +1,8 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home'
+import HomePF from './pages/homeLogat/HomePF'
+import HomePJ from './pages/homeLogat/HomePJ'
 import Login from './pages/login/Login'
 import LoginPF from './pages/login/LoginPF'
 import LoginPJ from './pages/login/LoginPJ'
@@ -12,6 +14,8 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />}></Route>
+      <Route path='/homePf' element={<HomePF />}></Route>
+      <Route path='/homePj' element={<HomePJ />}></Route>
       <Route path='/login' element={<Login />}></Route>
       <Route path='/loginPf' element={<LoginPF />}></Route>
       <Route path='/loginPj' element={<LoginPJ />}></Route>
