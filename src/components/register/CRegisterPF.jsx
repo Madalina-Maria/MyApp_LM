@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
@@ -16,8 +16,13 @@ import HomeIcon from '@mui/icons-material/Home'
 import LocationCityIcon from '@mui/icons-material/LocationCity'
 import PhoneIcon from '@mui/icons-material/Phone'
 import PublicIcon from '@mui/icons-material/Public'
+import Visibility from '@mui/icons-material/Visibility'
+import VisibilityOff from '@mui/icons-material/VisibilityOff'
+import IconButton from '@mui/material/IconButton'
 
 const CRegisterPF = () => {
+  const [password, setPassword] = useState('')
+  const [showPassword, setshowPassword] = useState(false)
   return (
     <div>
       <div className='grid justify-items-center '>
@@ -209,10 +214,10 @@ const CRegisterPF = () => {
                 ></TextField>
 
                 <TextField
-                  maxWidth={50}
                   fontFamily='sans-serif'
                   margin='normal'
-                  type={'password'}
+                  type={showPassword ? 'text' : 'password'}
+                  onChange={(e) => setPassword(e.target.value)}
                   variant='outlined'
                   placeholder='Parola'
                   autoComplete='current-password'
@@ -222,21 +227,43 @@ const CRegisterPF = () => {
                         <LockIcon />
                       </InputAdornment>
                     ),
+                    endAdornment: (
+                      <InputAdornment position='end'>
+                        <IconButton
+                          aria-label='toggle password visibility'
+                          onClick={() => setshowPassword(!showPassword)}
+                          edge='end'
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    ),
                   }}
                 ></TextField>
 
                 <TextField
-                  maxWidth={50}
                   fontFamily='sans-serif'
                   margin='normal'
-                  type={'password'}
+                  type={showPassword ? 'text' : 'password'}
+                  onChange={(e) => setPassword(e.target.value)}
                   variant='outlined'
-                  placeholder='Confirmare parolă'
-                  autoComplete='confirmare parola'
+                  placeholder='Confirmare parola'
+                  autoComplete='current-password'
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position='start'>
                         <LockIcon />
+                      </InputAdornment>
+                    ),
+                    endAdornment: (
+                      <InputAdornment position='end'>
+                        <IconButton
+                          aria-label='toggle password visibility'
+                          onClick={() => setshowPassword(!showPassword)}
+                          edge='end'
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
                       </InputAdornment>
                     ),
                   }}

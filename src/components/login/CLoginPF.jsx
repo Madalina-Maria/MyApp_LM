@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
@@ -12,8 +12,13 @@ import Stack from '@mui/material/Stack'
 import GoogleIcon from '@mui/icons-material/Google'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import Link from '@mui/material/Link'
+import Visibility from '@mui/icons-material/Visibility'
+import VisibilityOff from '@mui/icons-material/VisibilityOff'
+import IconButton from '@mui/material/IconButton'
 
 const CLoginPF = () => {
+  const [password, setPassword] = useState('')
+  const [showPassword, setshowPassword] = useState(false)
   return (
     <div className='min-w-full min-w-fit'>
       <div className='flex justify-center my-20'>
@@ -41,7 +46,8 @@ const CLoginPF = () => {
             <TextField
               fontFamily='sans-serif'
               margin='normal'
-              type={'password'}
+              type={showPassword ? 'text' : 'password'}
+              onChange={(e) => setPassword(e.target.value)}
               variant='outlined'
               placeholder='Parola'
               autoComplete='current-password'
@@ -51,8 +57,20 @@ const CLoginPF = () => {
                     <LockIcon />
                   </InputAdornment>
                 ),
+                endAdornment: (
+                  <InputAdornment position='end'>
+                    <IconButton
+                      aria-label='toggle password visibility'
+                      onClick={() => setshowPassword(!showPassword)}
+                      edge='end'
+                    >
+                      {showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                ),
               }}
             ></TextField>
+
             <Stack className='my-5 mx-1' direction='row' spacing={5}>
               <FormGroup>
                 <FormControlLabel
