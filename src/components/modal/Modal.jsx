@@ -15,6 +15,7 @@ const Modal = () => {
   } else {
     document.body.classList.remove('active-modal')
   }
+
   return (
     <div>
       {' '}
@@ -24,8 +25,14 @@ const Modal = () => {
       {modal && (
         <div className='modal'>
           <div onClick={toggleModal} className='overlay'></div>
-          <div className='modal-content'>
+          <div className='modal-content my-10'>
             <Box className='flex flex-col w-96'>
+              <TextField
+                id='outlined-nume-input'
+                label='Nume teren'
+                type='text'
+              />
+              <br />
               <TextField
                 id='outlined-tip-input'
                 label='Tipul terenului'

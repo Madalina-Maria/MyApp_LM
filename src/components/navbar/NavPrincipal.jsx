@@ -35,7 +35,8 @@ export default function Navbar() {
           className='text-xl font-bold'
           sx={{
             bgcolor: 'primary.main',
-            justifyContent: 'left',
+
+            justifyContent: 'space-between',
           }}
           showLabels
         >

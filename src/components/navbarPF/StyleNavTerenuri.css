@@ -1,0 +1,15 @@
+.content {
+  max-width: 900px;
+  min-width: 300px;
+  position: absolute;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.close-btn {
+  color: #fff;
+  background: #111;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 15px;
+}

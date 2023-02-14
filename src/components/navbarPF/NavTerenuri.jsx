@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BottomNavigation from '@mui/material/BottomNavigation'
 import BottomNavigationAction from '@mui/material/BottomNavigationAction'
 import HomeIcon from '@mui/icons-material/Home'
@@ -7,9 +7,9 @@ import { Box } from '@mui/material'
 import { createTheme } from '@mui/material/styles'
 import { ThemeProvider } from '@mui/material/styles'
 import AgricultureIcon from '@mui/icons-material/Agriculture'
-import AddIcon from '@mui/icons-material/Add'
 import HelpIcon from '@mui/icons-material/Help'
 import LogoutIcon from '@mui/icons-material/Logout'
+import './StyleNavTerenuri.css'
 
 const theme = createTheme({
   palette: {
@@ -23,8 +23,20 @@ const theme = createTheme({
 })
 
 const NavTerenuri = () => {
+  const [modal, setModal] = useState(false)
+
+  const toggleModal = () => {
+    setModal(!modal)
+  }
+
+  if (modal) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
   return (
     <div>
+      {' '}
       <ThemeProvider theme={theme}>
         <Box
           sx={{
@@ -36,7 +48,7 @@ const NavTerenuri = () => {
             className='text-xl font-bold'
             sx={{
               bgcolor: 'primary.main',
-              justifyContent: 'space-evenly',
+              justifyContent: 'space-between',
             }}
             showLabels
           >
@@ -58,17 +70,9 @@ const NavTerenuri = () => {
             />
 
             <BottomNavigationAction
-              component={Link}
-              to='/terenuriPf'
-              label='ADAUGĂ'
-              value='text'
-              icon={<AddIcon />}
-            />
-            <BottomNavigationAction
-              component={Link}
-              to='/ajutorPf'
               label='AJUTOR'
               value='text'
+              onClick={toggleModal}
               icon={<HelpIcon />}
             />
             <BottomNavigationAction
@@ -82,6 +86,68 @@ const NavTerenuri = () => {
         </Box>
         <Box sx={{ width: 700, backgroundColor: 'primary.main' }}></Box>
       </ThemeProvider>
+      {modal && (
+        <div className='modal'>
+          <div onClick={toggleModal} className='overlay'></div>
+          <div className='content'>
+            <Box>
+              <div className='text-justify'>
+                <p>
+                  Pentru a adăuga un teren nou trebuie doar să dați click pe
+                  butonul{' '}
+                  <b>
+                    <em>"ADAUGĂ TEREN"</em>
+                  </b>{' '}
+                  de pe pagina principală.
+                </p>
+                <br />
+                <p>
+                  <u>După ce ați dat click pe buton</u> se va deschide o pagină
+                  unde va trebui să adăugați câteva date despre acel teren și să
+                  apasți pe butonul de{' '}
+                  <b>
+                    <em> "TRIMITE".</em>
+                  </b>{' '}
+                </p>
+                <br />
+                <p>
+                  Dacă datele introduse sunt corecte terenul va fi adugat pe
+                  pagină.
+                  <br />
+                  <strong>
+                    În cazul în care nu ați introdus ceva corect veți primi un
+                    mesaj cu privire la datele introduse greșit pentru a le pute
+                    corecta.
+                  </strong>
+                </p>
+                <br />
+                <p>
+                  Pe pagina{' '}
+                  <b>
+                    <em> "TERENURILE MELE"</em>
+                  </b>{' '}
+                  sunt terenurile adăugate de dumneavoastră.
+                </p>
+                <br />
+                <p>
+                  <u>Pentru a vedea detalii despre fiecare teren </u> trebuie
+                  doar să dați <strong>click pe numele terenului.</strong>
+                </p>
+                <br />
+                <p>
+                  <u>După ce ați apăsat click pe numele terenului</u>, în partea
+                  <em> dreaptă</em>, pe pagină, vor apărea{' '}
+                  <strong>detaliile despre acel teren.</strong>
+                </p>
+              </div>
+
+              <button className='close-btn' onClick={toggleModal}>
+                ÎNCHIDE
+              </button>
+            </Box>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
