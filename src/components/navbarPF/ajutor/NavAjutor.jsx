@@ -7,7 +7,7 @@ import { Box } from '@mui/material'
 import { createTheme } from '@mui/material/styles'
 import { ThemeProvider } from '@mui/material/styles'
 import AgricultureIcon from '@mui/icons-material/Agriculture'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
+import HelpIcon from '@mui/icons-material/Help'
 
 const theme = createTheme({
   palette: {
@@ -20,7 +20,7 @@ const theme = createTheme({
   },
 })
 
-const NavAchizitii = () => {
+const NavAjutor = () => {
   return (
     <div>
       {' '}
@@ -56,10 +56,10 @@ const NavAchizitii = () => {
             />
             <BottomNavigationAction
               component={Link}
-              to='/achizitiiPf'
-              label='ACHIZITII'
+              to='/ajutorPf'
+              label='AJUTOR'
               value='text'
-              icon={<ShoppingCartIcon />}
+              icon={<HelpIcon />}
             />
           </BottomNavigation>
         </Box>
@@ -68,4 +68,4 @@ const NavAchizitii = () => {
     </div>
   )
 }
-export default NavAchizitii
+export default NavAjutor

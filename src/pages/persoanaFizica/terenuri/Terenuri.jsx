@@ -1,15 +1,13 @@
 import React from 'react'
-import Modal from '../../../components/modal/Modal'
 import NavTerenuri from '../../../components/navbarPF/terenuri/NavTerenuri'
 import CTerenuri from '../../../components/persoanaFizica/terenuri/CTerenuri'
-import './StyleTPF.css'
+import './StyleTerenuriPF.css'
 
 const Terenuri = () => {
   return (
-    <div>
+    <div className='TerenuriPF-Bg'>
       <NavTerenuri />
       <CTerenuri />
-      <Modal />
     </div>
   )
 }

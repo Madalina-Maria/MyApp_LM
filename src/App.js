@@ -16,6 +16,8 @@ import Oferte from './pages/persoanaFizica/oferte/Oferte'
 import Favorite from './pages/persoanaFizica/oferte/Favorite'
 import Conversatii from './pages/persoanaFizica/oferte/Conversatii'
 import Cereri from './pages/persoanaFizica/cereri/Cereri'
+import ConversatiiCereriPF from './pages/persoanaFizica/cereri/ConversatiiCereriPF'
+import RezultateCereriPF from './pages/persoanaFizica/cereri/RezultateCereriPF'
 import Achizitii from './pages/persoanaFizica/achizitii/Achizitii'
 import AjutorPF from './pages/persoanaFizica/ajutor/AjutorPF'
 import LicitatiiInCurs from './pages/persoanaFizica/licitatii/LicitatiiInCurs'
@@ -49,6 +51,11 @@ function App() {
       <Route path='/favoritePf' element={<Favorite />}></Route>
       <Route path='/conversatiiPf' element={<Conversatii />}></Route>
       <Route path='/cereriPf' element={<Cereri />}></Route>
+      <Route
+        path='/conversatiicereriPf'
+        element={<ConversatiiCereriPF />}
+      ></Route>
+      <Route path='/rezultatecereriPf' element={<RezultateCereriPF />}></Route>
       <Route path='/achizitiiPf' element={<Achizitii />}></Route>
       <Route path='/ajutorPf' element={<AjutorPF />}></Route>
       <Route path='/ajutor' element={<Ajutor />}></Route>

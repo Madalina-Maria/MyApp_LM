@@ -1,0 +1,17 @@
+html {
+  height: 100vmax;
+}
+
+body {
+  margin: 0;
+}
+
+.LicitatiiInCursPF-Bg {
+  padding-bottom: 100vmax;
+  background: rgb(158, 158, 158);
+  background: linear-gradient(
+    0deg,
+    rgba(158, 158, 158, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}

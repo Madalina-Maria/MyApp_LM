@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import BottomNavigation from '@mui/material/BottomNavigation'
 import BottomNavigationAction from '@mui/material/BottomNavigationAction'
 import HelpIcon from '@mui/icons-material/Help'
-import SearchIcon from '@mui/icons-material/Search'
-import './StyleAjutorModal.css'
 
 export const AjutorModal = () => {
   const [modal, setModal] = useState(false)
@@ -41,19 +39,19 @@ export const AjutorModal = () => {
           <div className='content1'>
             <div className='paragraf'>
               <p>
-                Pe pagina "TERENURILE MELE" se vor afișa în ordine terenurile
+                Pe pagina "Cererile mele" se vor afișa în ordine cererile
                 adăugate de dumneavoastră.
               </p>
               <br />
               <p>
-                Pentru a adăuga un teren nou trebuie să apăsați butonul "ADAUGĂ
-                TEREN".
+                Pentru a adăuga o cerere nouă trebuie să apăsați butonul "ADAUGĂ
+                CERERE".
               </p>
               <br />
               <p>
                 După ce butonul a fost apăsat, se va deschide un formular, în
-                care trebuie trecute câteva date despre terenul pe care doriți
-                să îl introduceți.{' '}
+                care trebuie trecute câteva date despre dumneavoastră și despre
+                cererea pe care doriți să o faceți.{' '}
               </p>
               <br />
               <p>
@@ -62,15 +60,22 @@ export const AjutorModal = () => {
               </p>
               <br />
               <p>
-                Dacă datele introduse sunt corecte, terenul se va adăuga pe
-                pagina "TERENURILE MELE". Dacă datele introduse sunt greșite se
-                va trimite un mesaj de informare asupra datelor
-                necorespunzătoare, în vederea corectării acestora.
+                Dacă datele introduse sunt corecte, cererea se va adăuga pe
+                pagina "Cererile mele". Dacă datele introduse sunt greșite se va
+                trimite un mesaj de informare asupra datelor necorespunzătoare,
+                în vederea corectării acestora.
+              </p>
+              <br />
+
+              <p>
+                Înainte de a rezolva o cerere puteți conversa cu persoana care
+                vă acceptă cererea pentru mai multe detalii. Conversațiile le
+                găsiți salvate la secțiunea "CONVERSAȚII".
               </p>
               <br />
               <p>
-                Pentru a căuta un teren, faceți click in bara de cautare,
-                scrieți numele terenului si apăsați butonul <SearchIcon />
+                Ați făcut o cerere? Vreți să vedeți rezultatul cererii? Nicio
+                problemă, găsiți totul pe pagina "REZULTATE".
               </p>
               <br />
               <p>
