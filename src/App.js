@@ -12,10 +12,15 @@ import RegisterPJ from './pages/register/RegisterPJ'
 import Ajutor from './pages/ajutor/Ajutor'
 import Terenuri from './pages/persoanaFizica/terenuri/Terenuri'
 import Licitatii from './pages/persoanaFizica/licitatii/Licitatii'
-import Oferte from './pages/persoanaFizica/Oferte'
-import Cereri from './pages/persoanaFizica/Cereri'
-import Achizitii from './pages/persoanaFizica/Achizitii'
-import AjutorPF from './pages/persoanaFizica/AjutorPF'
+import Oferte from './pages/persoanaFizica/oferte/Oferte'
+import Favorite from './pages/persoanaFizica/oferte/Favorite'
+import Conversatii from './pages/persoanaFizica/oferte/Conversatii'
+import Cereri from './pages/persoanaFizica/cereri/Cereri'
+import Achizitii from './pages/persoanaFizica/achizitii/Achizitii'
+import AjutorPF from './pages/persoanaFizica/ajutor/AjutorPF'
+import LicitatiiInCurs from './pages/persoanaFizica/licitatii/LicitatiiInCurs'
+import LicitatiiViitoare from './pages/persoanaFizica/licitatii/LicitatiiViitoare'
+import RezultateLicitatii from './pages/persoanaFizica/licitatii/RezultateLicitatii'
 
 function App() {
   return (
@@ -31,7 +36,18 @@ function App() {
       <Route path='/registerPj' element={<RegisterPJ />}></Route>
       <Route path='/terenuriPf' element={<Terenuri />}></Route>
       <Route path='/licitatiiPf' element={<Licitatii />}></Route>
+      <Route path='/licitatiiincursPf' element={<LicitatiiInCurs />}></Route>
+      <Route
+        path='/licitatiiviitoarePf'
+        element={<LicitatiiViitoare />}
+      ></Route>
+      <Route
+        path='/rezultatelicitatiiPf'
+        element={<RezultateLicitatii />}
+      ></Route>
       <Route path='/ofertePf' element={<Oferte />}></Route>
+      <Route path='/favoritePf' element={<Favorite />}></Route>
+      <Route path='/conversatiiPf' element={<Conversatii />}></Route>
       <Route path='/cereriPf' element={<Cereri />}></Route>
       <Route path='/achizitiiPf' element={<Achizitii />}></Route>
       <Route path='/ajutorPf' element={<AjutorPF />}></Route>

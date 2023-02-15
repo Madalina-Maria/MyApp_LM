@@ -65,7 +65,7 @@ const Modal = () => {
               <br />
               <TextField id='outlined-fac-input' label='Facturi' type='text' />
               <button className='close-modal' onClick={toggleModal}>
-                TRIMITE
+                ADAUGĂ
               </button>
             </Box>
           </div>
