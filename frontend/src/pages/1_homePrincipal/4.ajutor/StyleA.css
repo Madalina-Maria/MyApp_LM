@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.bG {
+  padding-bottom: 100vh;
+  background: rgb(255, 240, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 240, 247, 1) 0%,
+    rgba(201, 225, 255, 1) 100%
+  );
+}

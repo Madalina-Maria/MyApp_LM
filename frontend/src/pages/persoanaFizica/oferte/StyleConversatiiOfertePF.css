@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.ConversatiiOfertePF-Bg {
+  padding-bottom: 100vmax;
+  background: rgb(223, 236, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 236, 251, 1) 0%,
+    rgba(215, 215, 215, 1) 100%
+  );
+}

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.boxLoginPF {
+  padding-bottom: 100vh;
+  background: rgb(195, 240, 241);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 240, 241, 1) 0%,
+    rgba(255, 247, 229, 1) 100%
+  );
+}
